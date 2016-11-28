@@ -75,7 +75,7 @@ public class OperatorDao implements OperatorDaoInterface<Operator, Integer> {
 
 	@Override
 	public Operator findById(Integer id) {
-		return getCurrentSession().get(Operator.class, id);
+		return (Operator) getCurrentSession().get(Operator.class, id);
 	}
 
 	@Override
