@@ -19,7 +19,7 @@ public class OperatorDao implements OperatorDaoInterface<Operator, Integer> {
 
 	}
 
-	private static SessionFactory getSessionFactory() {
+	private SessionFactory getSessionFactory() {
 		Configuration configuration = new Configuration().configure();
 		StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
 				.applySettings(configuration.getProperties());
